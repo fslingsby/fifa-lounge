@@ -4,3 +4,6 @@
 2025-02-01 Arsenal 2-2 Tottenham Hotspur
 2025-02-01 Wolves 1-0 Arsenal
 2025-02-01 Manchester City 1-2 Tottenham Hotspur
+2025-02-01 Liverpool 2-0 Aston Villa
+2025-02-01 Leeds 4-1 Chelsea
+2025-02-01 Chelsea 0-0 Arsenal

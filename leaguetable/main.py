@@ -3,6 +3,9 @@ import csv
 import datetime
 import random
 
+WIN = 3
+DRAW = 3
+
 def league_table():
     print("\n\nHere is the league table as it stands:\n")
     df = pandas.read_csv('table.csv')
@@ -70,12 +73,12 @@ def play_game():
                         i[6] += away_goals
                         if home_goals > away_goals:
                             i[2] += 1
-                            i[7] += 3
+                            i[7] += WIN
                         elif home_goals < away_goals:
                             i[4] += 1
                         elif away_goals == home_goals:
                             i[3] += 1
-                            i[7] += 1
+                            i[7] += DRAW
                     if i[0] == away:
                         away_valid = True
                         i[1] += 1
@@ -83,12 +86,12 @@ def play_game():
                         i[6] += home_goals
                         if away_goals > home_goals:
                             i[2] += 1
-                            i[7] += 3
+                            i[7] += WIN
                         elif away_goals < home_goals:
                             i[4] += 1
                         elif away_goals == home_goals:
                             i[3] += 1
-                            i[7] += 1
+                            i[7] += DRAW
                 if home_valid == True and away_valid == True:
                     print("The table will now be updated")
                     with open('table.csv', 'w', newline='') as f:
