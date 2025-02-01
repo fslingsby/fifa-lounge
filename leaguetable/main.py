@@ -4,7 +4,7 @@ import datetime
 import random
 
 WIN = 3
-DRAW = 3
+DRAW = 1
 
 def league_table():
     print("\n\nHere is the league table as it stands:\n")
